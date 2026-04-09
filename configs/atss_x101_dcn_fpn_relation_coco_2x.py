@@ -213,11 +213,10 @@ model = dict(
             keypoint_types=['top_left_corner', 'bottom_right_corner'],
             with_key_score=False,
             with_relation=True),
-        keypoint_cfg=dict(max_keypoint_num=20, keypoint_score_thr=0.0),
+        keypoint_cfg=dict(max_keypoint_num=50, keypoint_score_thr=0.0),
         feature_selection_cfg=dict(
-            selection_method='index',
-            cross_level_topk=50,
-            cross_level_selection=True),
+            selection_method='index'
+        ),
         num_attn_heads=8,
         scale_position=False,
         pos_cfg=dict(base_size=[300, 300], log_scale=True),
