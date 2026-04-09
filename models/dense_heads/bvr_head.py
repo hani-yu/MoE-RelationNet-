@@ -530,7 +530,7 @@ class BVRHead(BaseDenseHead,BBoxTestMixin):
             else:
                 new_img_metas.append(meta)
         img_metas = new_img_metas
-        # =======================================================
+       
         
         # check with_nms argument
         gb_sig = signature(self.bbox_head.get_bboxes)
