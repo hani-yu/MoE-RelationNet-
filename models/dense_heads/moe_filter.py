@@ -337,7 +337,7 @@ class DeepseekMoE(nn.Module):
     @torch.no_grad()
     def moe_infer(self, x, flat_expert_indices, flat_expert_weights, chunk_size=1024):
         """
-        x: [batch_size, seq_len, hidden] 或 [num_tokens, hidden]
+        x: [batch_size, seq_len, hidden] or [num_tokens, hidden]
         flat_expert_indices: [num_tokens * num_experts_per_tok] 
         flat_expert_weights: [num_tokens * num_experts_per_tok] 
         """
